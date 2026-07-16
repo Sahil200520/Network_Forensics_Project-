@@ -1,0 +1,5 @@
+# PROBE: Passive Network Forensics & Mitigation Engine
+# Dependency Specification
+
+# Core packet manipulation, sniffing, and crafting library
+scapy>=2.7.0

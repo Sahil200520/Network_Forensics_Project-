@@ -115,9 +115,9 @@ def main():
     
     print("\nAll Ingestion and L7 parsing assertions PASSED! Industrial-grade sniffer is fully functional.")
     
-    # Clean up
-    if os.path.exists(pcap_path):
-        os.remove(pcap_path)
+    # Clean up (Commented out to keep the mock file in the directory for CLI testing)
+    # if os.path.exists(pcap_path):
+    #     os.remove(pcap_path)
 
 if __name__ == "__main__":
     main()

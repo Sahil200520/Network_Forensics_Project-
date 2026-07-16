@@ -477,6 +477,11 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
+    if not args.interface and not args.file and not args.validate_privileges:
+        parser.print_help()
+        print("\n[ERROR] You must specify either a live network interface (-i/--interface) or an offline PCAP file (-f/--file).", file=sys.stderr)
+        sys.exit(1)
+
     if args.validate_privileges:
         try:
             check_privileges()
