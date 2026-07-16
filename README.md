@@ -51,7 +51,7 @@ Here is how data flows sequentially through the PROBE ecosystem:
 
 ---
 
-## 🛠️ Project Structure
+##  Project Structure
 
 ```text
 ├── probe_sniffer.py        # Core Traffic Ingestion & L7 Parsing Engine
